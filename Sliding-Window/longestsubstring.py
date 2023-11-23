@@ -49,3 +49,9 @@ print(res)
 
 res2=Solution.lengthOfLongestSubstring(any,"pwwkew")
 print(res2)
+
+
+# The set charSet is used to keep track of unique characters in the current substring.
+# The two pointers l and r are used to define a window that represents the current substring.
+# The while loop ensures that the current substring has no repeating characters, and it dynamically adjusts the window by moving the left pointer (l) to the right.
+# The maximum length of the substring without repeating characters is continuously updated in the res variable.
