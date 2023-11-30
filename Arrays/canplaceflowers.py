@@ -35,7 +35,9 @@ class Solution(object):
         """
         # to solve this easily we can add a 0 at first and last of flowerbed
         f=[0]+flowerbed+[0]
+        # we should check previous current and next so we will be looping from 1 to len of f -1
         for i in range(1,len(f)-1):
+
             if f[i-1]==0 and f[i]==0 and f[i+1]==0:
                 f[i]=1
                 n-=1
