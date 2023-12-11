@@ -42,7 +42,7 @@ class Solution(object):
         :rtype: int
         """
         if not needle:
-            return -1
+            return 0
         needleLen=len(needle)
         haystackLen=len(haystack)
         for i in range(haystackLen-needleLen+1):
@@ -54,3 +54,13 @@ res=Solution.strStr(any,"leetcode","leeto")
 print(res)
 res=Solution.strStr(any,"leetcode","lee")
 print(res)
+
+# with inbuild function
+class Solution(object):
+    def strStr(self, haystack, needle):
+      return haystack.find(needle)
+    
+res2=Solution.strStr(any,"leetcodeocode","code")
+print(res2)
+res3=Solution.strStr(any,"leetcode","ee")
+print(res3)
