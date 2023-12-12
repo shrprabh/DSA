@@ -39,8 +39,8 @@ class Solution(object):
                 lst.append(i)
             else:
                 if(len(lst)>0):
-                    top=lst[-1]
-                    if mp[top]==i:
+                    top=lst[-1]  #this will give the last index or top element or we can use lst[len(s)-1]
+                    if mp[top]==i: # when the paranthesis that is keys which are pushed are matched with the one in loop else block it will be popper from the list
                         lst.pop()
                     else:
                         return False
